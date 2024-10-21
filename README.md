@@ -39,10 +39,13 @@ To see the program.
 cat sum1ton.c
 ```
 The compiler performs optimization based on the knowledge it has of the program. Compiling multiple files at once to a single output file mode allows the compiler to use information gained from all of the files when compiling each of them.</br>
+
 Turning on optimization flags makes the compiler attempt to improve the performance and/or code size at the expense of compilation time and possibly the ability to debug the program.</br>
+
 Depending on the target and how GCC was configured, a slightly different set of optimizations may be enabled at each -O level.</br>
+
 **To optimize the program using -O1 function with RISCV GCC Compiler**</br>
-Optimize. Optimizing compilation takes somewhat more time, and a lot more memory for a large function.
+-O1 : Optimizing compilation takes somewhat more time, and a lot more memory for a large function.
 
 With -O, the compiler tries to reduce code size and execution time, without performing any optimizations that take a great deal of compilation time.</br>
 
@@ -68,6 +71,7 @@ There are ***15 instructions*** in main() with -O1 fumction.
 
 **To optimize the program using -Ofast function with RISCV GCC Compiler**</br>
 -Ofast disregard strict standards compliance. -Ofast enables all -O3 optimizations. It also enables optimizations that are not valid for all standard-compliant programs. It turns on -ffast-math, -fallow-store-data-races and the Fortran-specific -fstack-arrays, unless -fmax-stack-var-size is specified, and -fno-protect-parens. It turns off -fsemantic-interposition.</br>
+
 Compile the program using RISCV GCC.
 ```bash
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.0 sum1ton.c
