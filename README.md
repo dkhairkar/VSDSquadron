@@ -38,7 +38,7 @@ To see the program.
 ```bash
 cat sum1ton.c
 ```
-**To optimize the program using -O1 function with RISCV GCC Compiler**
+**To optimize the program using -O1 function with RISCV GCC Compiler**</br>
 Compile the program using RISCV GCC.
 ```bash
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.0 sum1ton.c
@@ -59,7 +59,7 @@ riscv64_unknown-elf-objdump -d sum1ton.0 | less
 
 There are ***15 instructions*** in main() with -O1 fumction.
 
-**To optimize the program using -Ofast function with RISCV GCC Compiler**
+**To optimize the program using -Ofast function with RISCV GCC Compiler**</br>
 Compile the program using RISCV GCC.
 ```bash
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.0 sum1ton.c
