@@ -3,8 +3,7 @@
 ## Task 1
 
 ### Objective:
-1. To compile a C program.
-2. To compile and dissemble the same program using RISCV GCC Compiler.
+Create GitHub repo. Install RISC-V toolchain using VDI shared over whatsapp group. Refer to C based Lab video and RISC-V based lab videos. Complete exact steps on your machine. Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
 
 ### Execution:
 1. To compile a C program.
